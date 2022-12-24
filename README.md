@@ -39,6 +39,6 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ## Imagens
 
--   Tela 01 - Cadastro
+-   Tela 01 
     <img src="./images/decodificador_alura.png" alt="Tela "/>
 

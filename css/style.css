@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f3f5fc;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    max-width: 980px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/* CONTAINER LOGO*/
+
+.container-logo {
+    flex-direction: row;
+    margin: 0;
+    width: 10%;
+    height: 100vh;
+    border-radius: 0;
+}
+
+.container-logo img {
+    display: flex;
+    padding-top: 45px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* CONTAINER INPUT*/
+
+.container-input {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-input textarea {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    padding-top: 80px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    color: hsla(213, 84%, 24%, 1);
+    overflow: hidden;
+    resize: none;
+    outline: none;
+    margin: 0;
+}
+
+.container-input ::placeholder {
+    font-family: var(--font-inter);
+    color: hsla(213, 84%, 24%, 1);
+    opacity: 1;
+}
+
+.alerta {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.alerta p {
+    font-size: 12px;
+    color: #495057;
+}
+
+.buttons-cod {
+    display: flex;
+}
+
+.buttons-cod button {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #0a3871;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buttons-cod :nth-child(1) {
+    background-color: #0a3871;
+    color: #fff;
+    margin-right: 24px;
+    transition: 0.3s;
+}
+
+.buttons-cod :nth-child(1):hover {
+    opacity: 0.8;
+}
+
+.buttons-cod :nth-child(2) {
+    background-color: #d8dfe8;
+    color: #0a3871;
+    transition: 0.3s;
+}
+
+.buttons-cod :nth-child(2):hover {
+    opacity: 0.5;
+}
+
+.buttons-cod :nth-child(3) {
+    background-color: #bb4444;
+    color: #fff;
+    margin-left: 24px;
+    transition: 0.3s;
+}
+
+.buttons-cod :nth-child(3):hover {
+    opacity: 0.5;
+}
+
+/* CONTAINER OUTPUT*/
+
+.container-output {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    overflow: hidden;
+}
+
+.result-display {
+    display: flex;
+}
+
+.result {
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 100%;
+    height: 640px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errormessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errormessage img {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.errormessage .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.info h3 {
+    color: #343a40;
+    line-height: 120%;
+}
+
+.info p {
+    color: #343a40;
+    font-size: 12px;
+    line-height: 140%;
+    width: 80%;
+}
+
+.success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success textarea {
+    display: flex;
+    width: 243px;
+    height: 500px;
+    border: none;
+    overflow: hidden;
+    resize: none;
+    outline: none;
+}
+
+.button-copy button {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #0a3871;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    color: #0a3871;
+    transition: 0.3s;
+}
+
+.button-copy:hover {
+    opacity: 0.5;
+}
+
+.bloco02 {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+    margin-left: 8rem;
+    padding: 14.3rem 3.2rem 14.3rem 3.2rem;
+    border-radius: 3.2rem;
+    box-shadow: var(--cipher-shadow);
+    background-color: var(--cipher-color);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info h2 {
+    margin-bottom: 1.6rem;
+    color: hsl(210, 10%, 23%, 1);
+    line-height: 120%;
+}
+
+.info p {
+    color: hsla(210, 9%, 31%, 1);
+    line-height: 150%;
+}
+
+.resultado textarea {
+    width: 34rem;
+    height: 58rem;
+    font-size: 2.4rem;
+    line-height: 150%;
+    color: hsla(210, 9%, 31%, 1);
+    background: none;
+    border: none;
+    resize: none;
+}
+
+.copy-input input {
+    width: 32.8rem;
+    height: 6.7rem;
+    padding: 2.4rem;
+    border: 1px solid #0a3871;
+    border-radius: 2.4rem;
+    background: none;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: center;
+    color: hsla(213, 84%, 24%, 1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.copy-input input:hover {
+    opacity: 0.6;
+}
+
+.input-text {
+    text-transform: lowercase;
+}
+
+.text-result {
+    border: none;
+    overflow: auto;
+    outline: none;
+}
+.text.resultt::selection {
+    color: cadetblue;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chanllenger Oracle One - Codificador</title>
+</head>
+
+<body>
+    <main>
+
+        <header class="container-logo">
+            <img src="./images/logo_alura.svg" alt="container-logo">
+        </header>
+
+        <section class="container-input">
+            <div>
+                <form action="#" id="cripto">
+                    <textarea class="input-text" name="codificar" placeholder="Digite seu texto aqui..."></textarea>
+                </form>
+                <span class="alerta">
+                    <img src="./images/bi_exclamation-circle-fill.svg" alt="alerta">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                </span>
+                <div class="buttons-cod">
+
+                    <button onclick="btnCode()" type="submit" id="criptografar" value="codificar">Criptografar</button>
+                    <button onclick="btnUncode()" type="submit" id="descriptografar" value="descodificar" onclick="decodeMessage()">Descriptografar</button>
+                    <button onclick=" btnReset()" type="submit" id="reset" value="reset" onclick="decodeMessage()">Resetar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-output">
+            <div class="result">
+                <div class="result-display">
+                    <div class="errormessage">
+                        <div>
+                            <img src="./images/img_men_search.png" alt="Porcurando Mensagem">
+                        </div>
+                        <div class="info">
+                            <h3>Nenhuma mensagem encontrada</h3>
+                            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                        </div>
+                    </div>
+                    <div class="success">
+                        <form action="#" id="codificar">
+                            <textarea class="text-result" placeholder="Nenhum texto encontrado" readonly required></textarea>
+                        </form>
+                        <div class="button-copy">
+                            <button onclick="btnCopy()" id="copy" value="copy">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./javascript/script.js"></script>
+
+
+</body>
+
+</html>

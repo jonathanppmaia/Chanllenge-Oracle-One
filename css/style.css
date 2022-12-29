@@ -6,26 +6,22 @@
 }
 
 body {
-    display: flex;
     background-color: #f3f5fc;
-    width: 100vw;
-    height: 100vh;
-    min-height: 100%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
 main {
+    position: relative;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
     width: 100vw;
     height: 100vh;
-    min-height: 100%;
-    max-width: 980px;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
+    max-width: 1200px;
+    
+    
 }
 
 /* CONTAINER LOGO*/
@@ -48,11 +44,14 @@ main {
 /* CONTAINER INPUT*/
 
 .container-input {
+    width: 100%;
     display: flex;
-    width: 60%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 60%;
     overflow: hidden;
+
 }
 
 .container-input textarea {
@@ -68,6 +67,7 @@ main {
     resize: none;
     outline: none;
     margin: 0;
+    
 }
 
 .container-input ::placeholder {
@@ -88,12 +88,16 @@ main {
 }
 
 .buttons-cod {
+    width: 100%;
     display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
 }
 
 .buttons-cod button {
     width: 100%;
-    padding: 18px;
+    padding: 14px 40px;
     border: 1px solid #0a3871;
     border-radius: 20px;
     font-size: 12px;
@@ -102,9 +106,9 @@ main {
 }
 
 .buttons-cod :nth-child(1) {
+    width: 100%;
     background-color: #0a3871;
     color: #fff;
-    margin-right: 24px;
     transition: 0.3s;
 }
 
@@ -113,6 +117,7 @@ main {
 }
 
 .buttons-cod :nth-child(2) {
+    width: 100%;
     background-color: #d8dfe8;
     color: #0a3871;
     transition: 0.3s;
@@ -123,9 +128,10 @@ main {
 }
 
 .buttons-cod :nth-child(3) {
+     width: 100%;
     background-color: #bb4444;
     color: #fff;
-    margin-left: 24px;
+   
     transition: 0.3s;
 }
 
@@ -296,4 +302,3 @@ main {
 .text.resultt::selection {
     color: cadetblue;
 }
-
